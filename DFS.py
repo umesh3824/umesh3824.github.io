@@ -1,24 +1,28 @@
-# DFS
-graph = {'A': ['B', 'E', 'C'],
-         'B': ['A', 'D', 'E'],
-         'D': ['B', 'E'],
-         'E': ['A', 'D', 'B'],
-         'C': ['A', 'F', 'G'],
-         'F': ['C'],
-         'G': ['C']
-         }
+graph={
+    '1':['2','3'],
+    '2':['4','5'],
+    '3':['6'],
+    '4':['7'],
+    '5':['7'],
+    '6':[],
+    '7':[]
+}
+visited=[]
+stack=[]
+node='1'
+def dfs(visited,graph,node):
+    visited.append(node)
+    stack.insert(0,node)
+    while stack:
+        m=stack.pop(0)
+        print(m)
+        l=graph[m]
+        l.reverse()
+        for neighbour in l:
+            if neighbour not in visited:
+                stack.insert(0,neighbour)
+                visited.append(neighbour)
+        
 
-visited = []
-queue = []
+dfs(visited,graph,node)
 
-
-def dfs(visited, graph, g):
-    if g not in visited:
-        print(g)
-        visited.append(g)
-        # queue.append(m)
-        for n in graph[g]:
-            dfs(visited, graph, n)
-
-
-dfs(visited, graph, 'A')
