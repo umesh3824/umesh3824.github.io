@@ -1,34 +1,26 @@
-# BFS
-graph = {'A': ['B', 'E', 'C'],
-         'B': ['A', 'D', 'E'],
-         'D': ['B', 'E'],
-         'E': ['A', 'D', 'B'],
-         'C': ['A', 'F', 'G'],
-         'F': ['C'],
-         'G': ['C']
-         }
-
-visited = []
-queue = []
-
-
-def bfs(visited, graph, start_node, goal_node):
-    visited.append(start_node)
-    queue.append(start_node)
-
+graph={
+    '1':['2','3'],
+    '2':['4','5'],
+    '3':['6'],
+    '4':['7'],
+    '5':['7'],
+    '6':[],
+    '7':[]
+}
+visited=[]
+queue=[]
+node='1'
+def bfs(visited,graph,node):
+    visited.append(node)
+    queue.append(node)
     while queue:
-        m = queue.pop(0)
+        m=queue.pop(0)
         print(m)
-        if m == goal_node:
-            print("Node is Found !!! ")
-            break;
-        else:
-            for n in graph[m]:
-                if n not in visited:
-                    visited.append(n)
-                    queue.append(n)
+        for neighbour in graph[m]:
+            if neighbour not in visited:
+                visited.append(neighbour)
+                queue.append(neighbour)
+        
 
+bfs(visited,graph,node)
 
-print("The BFS Traversal is : ")
-
-bfs(visited, graph, 'A', 'D')
