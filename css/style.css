@@ -248,7 +248,7 @@ header a:hover {
 }
 header .site-title {
   display: block;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
 }
 header .site-title.dot:after {
@@ -329,7 +329,7 @@ header .copyright {
 }
 .mobile-header .site-title {
   vertical-align: middle;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
 }
 .mobile-header .site-title.dot:after {
@@ -405,7 +405,7 @@ main.content.push {
 }
 .hero .cta h1 {
   color: #FFF;
-  font-size: 60px;
+  font-size: 40px;
   line-height: 0.7;
 }
 .hero .cta h1 .dot:after {
@@ -1641,7 +1641,7 @@ section.padding-60 {
 }
 @media only screen and (max-width: 767px) {
   .hero .cta h1 {
-    font-size: 48px;
+    font-size: 20px;
     line-height: 1.2;
   }
 
