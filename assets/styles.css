@@ -503,7 +503,7 @@ form .send-btn:hover {
 .timeline-dot {
   position: absolute;
   left: -41px;
-  top: 8px;
+  /* top: 8px; */
   width: 18px;
   height: 18px;
   background: var(--main-color);
@@ -537,4 +537,12 @@ form .send-btn:hover {
   margin: 8px 0 0 0;
   font-size: 0.95rem;
   color: var(--2nd-main-color);
+}
+
+
+/* mobile section */
+@media (max-width: 768px) {
+  .mobile-section {
+    padding: 0px 3%;
+  }
 }
