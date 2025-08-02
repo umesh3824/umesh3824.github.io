@@ -13,6 +13,7 @@
   --bg--color: #10101a;
   --main-color: #9370DB;
   --2nd-main-color: #ffffffcc;
+  --text-line-height: 1.6;
   --text-color: #fff;
   --big-font: 4rem;
   --h2-font: 1.9rem;
@@ -115,6 +116,7 @@ section {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 25px;
+  line-height: var(--text-line-height)
 }
 
 .btn {
@@ -525,6 +527,7 @@ form .send-btn:hover {
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   color: var(--text-color);
+  line-height: var(--text-line-height);
 }
 
 .timeline-content h4 {
@@ -608,4 +611,39 @@ form .send-btn:hover {
   vertical-align: middle;
   margin-right: 8px;
   color: var(--2nd-main-color);
+}
+
+
+
+
+/* Home Contacts */
+.home-contacts {
+  margin: 18px 0 18px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 28px;
+  align-items: center;
+}
+.home-contacts a {
+  color: var(--2nd-main-color);
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s;
+}
+.home-contacts a:hover {
+  color: var(--main-color);
+}
+.home-contacts i {
+  font-size: 1.3rem;
+  vertical-align: middle;
+}
+@media (max-width: 768px) {
+  .home-contacts {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.98rem;
+  }
 }
