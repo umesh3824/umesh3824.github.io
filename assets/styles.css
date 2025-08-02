@@ -603,3 +603,9 @@ form .send-btn:hover {
   }
 }
 
+.center h3 i,
+.contact-center h3 i {
+  vertical-align: middle;
+  margin-right: 8px;
+  color: var(--2nd-main-color);
+}
