@@ -250,9 +250,6 @@ section {
 }
 
 /* Resume Section */
-.resume {
-  text-align: center;
-}
 
 .resume h3 {
   color: var(--text-color);
@@ -490,3 +487,54 @@ form .send-btn:hover {
   }
 }
 
+/* Timeline Styles */
+.timeline {
+  position: relative;
+  margin: 40px 0 40px 30px;
+  padding-left: 30px;
+  border-left: 3px solid var(--main-color);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -41px;
+  top: 8px;
+  width: 18px;
+  height: 18px;
+  background: var(--main-color);
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px var(--main-color);
+}
+
+.timeline-date {
+  font-size: 1rem;
+  color: var(--main-color);
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.timeline-content {
+  background: #181828;
+  padding: 18px 22px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  color: var(--text-color);
+}
+
+.timeline-content h4 {
+  margin: 0 0 8px 0;
+  font-size: 1.15rem;
+  color: var(--text-color);
+}
+
+.timeline-content h5 {
+  margin: 8px 0 0 0;
+  font-size: 0.95rem;
+  color: var(--2nd-main-color);
+}
