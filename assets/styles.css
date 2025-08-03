@@ -666,3 +666,27 @@ form .send-btn:hover {
     padding: 120px 5%;
   }
 }
+/* Section Opening Animation */
+@keyframes sectionFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-animate {
+  opacity: 0;
+  animation: sectionFadeInUp 3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation-play-state: paused;
+}
+
+/* Optional: Add a slight delay for each section */
+.section-animate.delay-1 { animation-delay: 0s; }
+.section-animate.delay-2 { animation-delay: 0s; }
+.section-animate.delay-3 { animation-delay: 0s; }
+.section-animate.delay-4 { animation-delay: 0s; }
+.section-animate.delay-5 { animation-delay: 0s; }
