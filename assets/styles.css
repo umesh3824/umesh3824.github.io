@@ -659,4 +659,10 @@ form .send-btn:hover {
   .home{
     padding: 0px;
   }
+  .skills{
+    padding: 120px 5%;
+  }
+  #projects{
+    padding: 120px 5%;
+  }
 }
