@@ -665,6 +665,12 @@ form .send-btn:hover {
   #projects{
     padding: 120px 5%;
   }
+  #education{
+    padding: 120px 5%;
+  }
+  #experience{
+    padding: 120px 5%;
+  }
 }
 /* Section Opening Animation */
 @keyframes sectionFadeInUp {
